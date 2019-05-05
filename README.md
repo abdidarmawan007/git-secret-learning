@@ -29,7 +29,9 @@ git secret tell abdid46@gmail.com
 git secret whoknows
 ##### make sure you create .gitignore and addfile abdi.conf
 git secret add abdi.conf
+
 git secret hide
+
 rm abdi.conf
 
 ##### to decrypt the file
