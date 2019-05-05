@@ -1,6 +1,6 @@
 ### How to keep your repository’s sensitive data secure using git-secret
 
-## Install git-secret ##
+#### Install git-secret ####
 
 sudo apt-get install gawk
 
@@ -9,29 +9,30 @@ wget -qO - https://api.bintray.com/users/sobolevn/keys/gpg/public.key | sudo apt
 sudo apt-get update && sudo apt-get install git-secret
 
 
-## create key gpg ##
+#### create key gpg ####
 
 gpg --full-generate-key
 
 gpg --list-keys
 
+
 /home/devops/.gnupg/pubring.gpg
--------------------------------
+
 pub   4096R/62DE7097 2019-05-05
 uid                  abdi_darmawan <abdid46@gmail.com>
 sub   4096R/229855E5 2019-05-05
 
 
-## use git-secret ##
+#### use git-secret ####
 git secret init
 git secret tell abdid46@gmail.com
 git secret whoknows
-### make sure you create .gitignore and addfile abdi.conf
+##### make sure you create .gitignore and addfile abdi.conf
 git secret add abdi.conf
 git secret hide
 rm abdi.conf
 
-### To decrypt the file
+#####To decrypt the file
 git secret reveal
 
 
