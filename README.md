@@ -32,7 +32,7 @@ git secret add abdi.conf
 git secret hide
 rm abdi.conf
 
-#####To decrypt the file
+##### to decrypt the file
 git secret reveal
 
 
