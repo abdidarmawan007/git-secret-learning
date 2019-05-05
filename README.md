@@ -27,7 +27,7 @@ git secret init
 git secret tell abdid46@gmail.com
 
 git secret whoknows
-##### make sure you create .gitignore and addfile abdi.conf
+##### make sure you create .gitignore and add file abdi.conf
 git secret add abdi.conf
 
 git secret hide
